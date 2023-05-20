@@ -1,0 +1,36 @@
+<div class="container-fluid">
+  <div class="bg-image shadow-2-strong contenedor">
+    <br><br><br>
+    <h1 style="text-align: center; color: white; font-weight: bold;">{{title}}</h1>
+    <br><br>
+    <div class="container-sm">
+      <div class="row">
+        <div class="col-12 text-center carta" *ngIf="character != null">
+          <div class="card " style="width: 18rem; justify-items: center;">
+            <h4>{{character.name}}</h4>
+            <img src={{character.image}} alt="" class="card-img-top">
+            <div class="card-body">
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">Status: {{character.status}}</li>
+                <li class="list-group-item">Species:{{character.species}}</li>
+                <li class="list-group-item">Gender:{{character.gender}}</li>
+                <li class="list-group-item">Origin:{{character.origin.name}}</li>
+                <li class="list-group-item">Location:{{character.location.name}}</li>
+              </ul>
+              <button class="btn btn-warning mt-1" (click)="return()">Return</button>
+            </div>
+          </div>
+
+
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+
+
+</div>
